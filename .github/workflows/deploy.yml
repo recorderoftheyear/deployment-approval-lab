@@ -31,6 +31,7 @@ jobs:
   deploy:
     needs: validate
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Simulate production deployment
         run: echo "Simulated production deployment completed"
